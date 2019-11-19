@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+
+    <title>My first todo on jQuery</title>
+
+  </head>
+  <body>
+    <div class='jumbotron text-center'> 
+                <h1>todos</h1>
+    </div>
+    <div class='container'>
+      
+      <div class="controls">
+            <div class='hiding-object' id='notification'><h3>What would you want to do?</h3></div>
+            <div class='row'>
+            <div class='col hiding-object' id='counter-in-progress'></div>
+            <div class='col hiding-object' id='counter-complete'></div>
+            </div>
+          </div>
+            <br>
+            <div class='row'>
+                <input type='checkbox' class='custom-checkbox-1 col-auto hiding-object hide' id='global-check-box'>
+                <input type='text' class='form-control col-md-8' id='task-input' placeholder="Your task">
+                <button class='btn col-auto' id='task-addition'>&#43;</button>
+                <button class='btn col-auto' id='remove-completed-tasks'>&#128465;</button>
+          </div>
+            <br>
+            <ul class='mr-auto' id='tasks-list'>
+          </ul>
+      </div>
+      <br>
+            <!-- <button class="btn" id="show-first-page">&larr;</button> -->
+            <div id="pagination-block">
+             </div>
+            <!-- <button class="btn" id="show-last-page">&rarr;</button> -->
+            <br>
+            <button class='btn tab hint' id='all-tasks'>Show all tasks</button>
+            <button class='btn tab' id='completed-tasks'>Show completed tasks</button>
+            <button class='btn tab' id='tasks-in-progress'>Show tasks in progress</button>
+               
+    </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js"></script>
+    <!-- todo script -->
+    <script src="todo.js"></script>
+  </body>
+</html>
